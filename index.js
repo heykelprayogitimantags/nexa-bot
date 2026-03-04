@@ -6,7 +6,6 @@ require('dotenv').config();
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY });
 
 const client = new Client({
-    authStrategy: new LocalAuth()
 });
 
 client.on('qr', (qr) => {
